@@ -32,7 +32,7 @@ export const Cart = () => {
             </Typography>
           </Typography>
 
-          {cart.length === 0 && <p>No hay productos en el carrito</p>}
+          {cart.length === 0 && <p>There are no products in the cart yet</p>}
 
           {cart.map((p) => {
             return <CartProduct product={p} handleRemove={handleRemove} handleUpdate={handleUpdate} />;
